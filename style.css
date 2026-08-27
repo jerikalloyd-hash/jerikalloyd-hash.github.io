@@ -207,6 +207,13 @@ nav h1 {
   color: black;
 }
 
+
+
+/* Portfolio styles */
+.content h1 {
+  color: black;
+}
+
 #portfolio {
   list-style: none;
   margin: 0;
@@ -254,6 +261,3 @@ nav h1 {
 #portfolio a:hover::after {
   opacity: 1;
 }
-
-
-  
