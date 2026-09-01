@@ -1,4 +1,4 @@
-* {
+https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXY58RPcSFqVAAKtka9Qxfn3udngCe25W9K_NHPvLGHQ&s=10* {
   box-sizing: border-box;
 }
 
@@ -75,8 +75,6 @@ h2 {
   line-height: 1.4;
 }
 
-💡 What does .content p mean?
-The selector .content p targets only <p> elements that are inside an element with class="content". This way, you can style the paragraph in your content area without accidentally changing paragraphs in other parts of your page.
 
 
 h2 {
@@ -199,15 +197,7 @@ nav h1 {
 .nav-li a:hover {
   background: #e78585f0;
   color: #7763ca;
-
-
-
-  /* Portfolio styles */
-.content h1 {
-  color: black;
 }
-
-
 
 /* Portfolio styles */
 .content h1 {
@@ -260,4 +250,76 @@ nav h1 {
 
 #portfolio a:hover::after {
   opacity: 1;
+}
+
+
+.image-gallery {
+  display: flex;
+  gap: 10px;
+}
+.image-gallery img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover
+
+
+
+ body {
+  background-image: url('background.jpg');
+  background-repeat: repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+ 
+
+
+/* responsive web design */
+@media screen and (min-width: 120px) and (max-width: 1080px) {
+  main {
+    height: 100ch;
+    zoom: 1.5;
+    display: grid;
+  }
+
+  h1 {
+    font-size: 44px;
+  }
+
+  h2 {
+    font-size: 42px;
+  }
+
+  h3 {
+    font-size: 36px;
+  }
+
+  #all-contents {
+    height: 100ch;
+    margin: none;
+  }
+
+  a {
+    font-size: 42px;
+  }
+
+  .sidebar {
+    margin-right: 0px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sidebar-img {
+    width: 100%;
+  }
+
+  p,
+  li {
+    font-size: 24px;
+  }
+
+  .content {
+    align-content: center;
+    justify-content: center;
+  }
 }
